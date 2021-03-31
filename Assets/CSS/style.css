@@ -115,6 +115,11 @@ h2{
     font-weight: 200;
 }
 
+#about-me img {
+    border: none;
+    width: 20%;
+}
+
 #work {
     display: inline-flex;
     justify-content: space-between;
