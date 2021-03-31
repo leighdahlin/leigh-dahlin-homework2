@@ -1,44 +1,48 @@
 
 /* Background images obtained from: www.pexels.com/ */
-/* Color palette generated from Coolers */
+/* Color palette generated from https://colorhunt.co/ */
 
 :root {
-    --light-slate-grey: #818D92;
-    --dark-blue-green: #586A6A;
-    --light-brown: #B9A394;
-    --black-shadows: #D4C5C7;
-    --light-lavender: #DAD4EF;
+    --off-white: #e7e7de;
+    --teal: #008891;
+    --dark-blue: #00587a;
+    --midnight-blue: #0f3057;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: var(--dark-blue);
 }
     
 
 header {
     display: flex;
     justify-content: space-between;  /*Pushes space between the h1 header and nav links so they're on opposite sides */
-    align-items: center; /*centers the content along the cross axis */
-    padding: 1%;
-    background: var(--dark-blue-green);
+    align-items: flex-start; /*centers the content along the cross axis */
+    /* padding: 2%; */
+    background-image: url(../Images/bnw-mountain\ \(2\).jpg);
+    background-size: cover;
+    height: 30rem;
+    background-position-x: 25%;
+    /* background: var(--dark-blue-green); */
     
 }
 
 h1 {
-    font-size: 225%;
-    color: var(--light-brown);
+    font-size: 300%;
+    color: var(--teal);
+    background: var(--off-white);
+    padding: 15px;
+    padding-left: 65px;
+    align-self: flex-end;
+    margin-bottom: 2%;;
 }
 
 nav{
     float: right;
     margin-right: 25px;
-}
-
-.mountain-background {
-    height: 200px;
-    width: 100%;
-    background-image: url(../Images/white-plaster.jpg);
-    background-size: cover;
+    padding: 3%;
+    
 }
 
 li {
@@ -47,31 +51,161 @@ li {
 }
 
 a {
+    text-decoration: none;
     font-size: 1.5rem;
     padding: 20px;
-    text-decoration: none;
-    color: var(--light-brown);
-    transition-property: font-size, font-weight;
-    transition-duration: 1s;
+    color: var(--off-white);
+    font-weight: 750;
 }
 
-a:hover {
+nav ul li a {
+    transition-property: font-size, font-weight;
+    transition-duration: 1s;
+    
+}
+
+nav ul li a:hover {
     font-size: 30px;
-    font-weight: 10;
+    font-weight: 10000;
+    text-shadow: 5px 2px 3px var(--teal);
 }
 
 section {
-    display: flex;
+    padding: 2%;
 }
 
-#box-1 {
-    width: 75%;
-    background-image: ;
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
 }
+
+h2{
+    width: 175px;
+    font-size: 250%;
+}
+
+.sub-header {
+    display: flex;
+    flex: 1 1 250px;
+    flex-wrap: wrap;
+    color: var(--midnight-blue);
+    padding: 3%;
+    border-right: 5px solid var(--midnight-blue);
+    margin: 3%;
+    text-align: right;
+    
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    padding: 1%;
+    color: var(--off-white);
+    font-size: 125%;
+    font-weight: 200;
+    margin-top: 2.5%;
+    
+    /* display: inline;
+    position: relative;
+    float: left; */
+    /* width: 75%; */
+}
+
+
+
+.work {
+    display: inline-flex;
+    justify-content: space-between;
+    
+    /* align-items: flex-start; */
+    
+}
+
+.work h2, .about-me h2 {
+    padding-bottom: 60%;
+}
+
+img {
+    border: solid 10px #008891;
+    margin: 1%;
+}
+
+.project-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#big-picture {
+    margin: 1%;
+    margin-top: 5%;
+    height: 35%;
+    width: 100%;
+}
+
+.other-pictures-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.other-pictures {
+    height: 40%;
+    width: 48%;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contact-info {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.contact {
+    border-bottom: 4px solid var(--teal);
+    padding: 10px;
+    
+
+}
+
+
+
 
 /* Media queries */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1235px) {
+    header{
+        height: 75%;
+        align-items: flex-end;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    a {
+        display: block;
+        font-size: 1rem;
+    }
+
+    a:hover {
+        font-size: 20px;
+
+    }
 
 }
 
