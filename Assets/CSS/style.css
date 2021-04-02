@@ -2,9 +2,10 @@
 /* Background images obtained from: www.pexels.com/ */
 /* Color palette generated from https://colorhunt.co/ */
 
+/* variables created for color scheme */
 :root {
     --off-white: #e7e7de;
-    --teal: #008891;
+    --teal: #62959c;
     --dark-blue: #00587a;
     --midnight-blue: #0f3057;
 }
@@ -13,92 +14,95 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: var(--dark-blue);
 }
-    
 
-header {
-    display: flex;
-    justify-content: space-between;  /*Pushes space between the h1 header and nav links so they're on opposite sides */
-    align-items: flex-start; /*centers the content along the cross axis */
-    /* padding: 2%; */
-    background-image: url(../Images/bnw-mountain\ \(2\).jpg);
-    background-size: cover;
-    height: 30rem;
-    background-position-x: 25%;
-    /* background: var(--dark-blue-green); */
-    
-}
-
-h1 {
-    font-size: 300%;
-    color: var(--off-white);
+.nav-header {
+    height: 55px;
     background: var(--teal);
-    padding: 22px;
-    padding-left: 65px;
-    align-self: flex-end;
-    margin-bottom: 3%;;
+}
+    
+nav{
+    padding: 1.5%;
+    float: right;
+    background: var(--teal);
 }
 
-nav{
-    float: right;
-    margin-right: 25px;
-    padding: 3%;
-    
-}
 
 li {
-    display: inline;
+    display: inline; /*changes display from default (block)*/
     margin-right: 10px;
 }
 
 a {
-    text-decoration: none;
-    font-size: 1.5rem;
+    text-decoration: none; /*remvoes bullets*/
+    font-size: 1.25rem;
     padding: 20px;
     color: var(--off-white);
-    font-weight: 750;
+    font-weight: 750; /*boldens the text*/
 }
 
 nav ul li a {
-    transition-property: font-size, font-weight;
-    transition-duration: 1s;
+    transition-property: font-size, font-weight; /*sets transition effect for font-size and font-weight*/
+    transition-duration: 1s; /*sets the length of the transition effect*/
     
 }
 
+/*Because the transition property is set, the effect below will last for 1 second*/
 nav ul li a:hover {
-    font-size: 30px;
-    font-weight: 10000;
-    /* text-shadow: 10px 5px 4px var(--midnight-blue); */
+    font-size: 1.5rem; /*the font size will increase to 2rem when hovered over*/
+    font-weight: 10000; /*the font will bolden more when hovered over*/
     
 }
 
+.background-photo {
+    clear:both;
+    display: flex;
+    justify-content: space-between;  /*Pushes space between the h1 header and nav links so they're on opposite sides */
+    align-items: flex-start; /*centers the content along the cross axis */
+    background-image: url(../Images/bnw-mountain\ \(2\).jpg);
+    background-size: cover;
+    height: 30rem;
+    background-position-x: 25%;
+      
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--off-white); 
+    background: var(--teal);
+    padding: 22px;
+    padding-left: 65px;
+    align-self: flex-end; /*aligns the header to the bottom of the flexbox*/
+    margin-bottom: 3%;; /*moves the header 3% from the bottom*/
+}
+
+/*sets padding for all sections to 4%*/
 section {
     padding: 4%;
 }
 
-
+/*This is the id for the About Me section*/
 #about-me {
     display: flex;
-    justify-content: space-between;
-
 }
+
+
 
 h2{
-    width: 175px;
-    font-size: 250%;
+    width: 175px; /*sets a fixed width for all h2 elements so they will line up together*/
+    font-size: 2.25rem;
 }
 
+/*each h2 element is wrapped in a div with display set to flex*/
 .sub-header {
     display: flex;
-    flex: 1 1 250px;
     flex-wrap: wrap;
     color: var(--midnight-blue);
     padding: 3%;
     border-right: 5px solid var(--midnight-blue);
-    /* margin: 3%; */
     text-align: right;
-    
 }
 
+/* the about me paragraph and images next to work are both wrapped in div with display set to flex */
 .paragraph, .project-pictures{
     display: flex;
     flex-direction: column;
@@ -108,16 +112,19 @@ h2{
     
 }
 
+
+/* this sets the properties for the p element within the .paragraph class */
 .paragraph p {
     padding: 1%;
     color: var(--off-white);
-    font-size: 100%;
+    font-size: 1.25rem;
     font-weight: 200;
 }
 
 #about-me img {
-    border: none;
-    width: 20%;
+   width: 30%;
+   height: 20%;
+   border: none;
 }
 
 #work {
@@ -127,7 +134,7 @@ h2{
 }
 
 img {
-    border: solid 10px #008891;
+    border: solid 10px var(--teal);
     margin: 1%;
     opacity: 0.9;
 }
@@ -142,20 +149,6 @@ img {
     position: relative;
 }
 
-.text-container1 {
-    position: absolute;
-    top: 60%;
-    left: 1%;
-    background: var(--teal);
-    padding: 1%;
-    padding-left: 10%;
-    color: var(--midnight-blue);
-    text-align: right;
-}
-
-h3 {
-    font-size: 100%;
-}
 
 #big-picture {
     margin: 1%;
@@ -178,6 +171,22 @@ h3 {
     display: flex;
     justify-content: space-between;
     height: 45%;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+.text-container1 {
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    background: var(--teal);
+    padding: 1%;
+    padding-left: 10%;
+    color: var(--midnight-blue);
+    text-align: right;
 }
 
 .text-container2 {
@@ -204,7 +213,7 @@ h3 {
 
 .text-container1 p, .text-container2 p, .text-container3 p {
     color: var(--off-white);
-    font-size: 90%;
+    font-size: 1.1rem;
     padding-top: 3%;
 }
 
@@ -229,26 +238,132 @@ h3 {
 
 /* Media queries */
 
-@media screen and (max-width: 1235px) {
+@media screen and (max-width: 992px) {
     header{
-        height: 75%;
-        align-items: flex-end;
+        height: 60%;
+        
     }
 
     h1 {
-        font-size: 200%;
+        font-size: 2rem;
+        padding: 20px;
+        padding-left: 60px;
+        
     }
 
     a {
-        display: block;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     nav ul li a:hover {
-        font-size: 125%;
+        font-size: 1.2rem;
 
+    }
+
+    h2 {
+        width: 120px;
+        font-size: 1.5rem;
+    }
+
+    .paragraph p, .text-container1 p, .text-container2 p, .text-container3 p, p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
     }
 
 }
 
-@media screen and ()
+@media screen and (max-width: 768px) {
+
+    header{
+        height: 50%;
+        align-items: flex-end;
+        
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 18px;
+        padding-left: 55px;
+        
+    }
+
+    a {
+        font-size: 0.85rem;
+    }
+
+    nav ul li a:hover {
+        font-size: 0.95rem;
+
+    }
+
+    h2 {
+        width: 95px;
+        font-size: 1.3rem;
+    }
+
+    .paragraph p, .text-container1 p, .text-container2 p, .text-container3 p, p {
+        font-size: .75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    header{
+        height: 20%;
+        align-items: flex-end;
+        
+    }
+
+    h1 {
+        font-size: 1rem;
+        padding: 16px;
+        padding-left: 50px;
+        
+    }
+
+    a {
+        font-size: 0.75rem;
+    }
+
+    nav ul li a:hover {
+        font-size: 0.85rem;
+
+    }
+
+    h2 {
+        width: 75px;
+        font-size: 1.25rem;
+    }
+
+    img {
+        border: solid 5px #008891;
+    }
+
+    .text-container1{
+        top: 45%
+    }
+
+    .text-container2, .text-container3 {
+        top: 20%;
+    }
+
+    .paragraph p, .text-container1 p, .text-container2 p, .text-container3 p, .contact-info a {
+        font-size: .5rem;
+    }
+
+    h3 {
+        font-size: 0.75rem;
+    }
+
+    .contact {
+        border-bottom: none;
+    }
+}
