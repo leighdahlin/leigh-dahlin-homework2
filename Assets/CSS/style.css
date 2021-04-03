@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    height: 5rem;
+    height: 5.5rem;
     background: var(--teal);
     display: flex;
     justify-content: flex-end;
@@ -47,7 +47,6 @@ a {
 nav ul li a {
     transition-property: font-size, font-weight; /*sets transition effect for font-size and font-weight*/
     transition-duration: 1s; /*sets the length of the transition effect*/
-    
 }
 
 /*Because the transition property is set, the effect below will last for 1 second*/
@@ -137,24 +136,44 @@ h2{
 img {
     border: solid 10px var(--teal);
     margin: 1%;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 .project-pictures img:hover {
     box-shadow: 0px 0px 50px 0px var(--midnight-blue);
-    transform: scale(1.03);
+    transform: scale(1.01);
     opacity: 3;
 }
+
+/* .project-pictures img:hover .text-container1{
+    padding-left: 15%;
+    background: var(--midnight-blue);
+} */
 
 #big-picture-container {
     position: relative;
 }
 
-
 #big-picture {
     margin: 1%;
     height: 85%;
     width: 98%;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.text-container1 {
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    background: var(--teal);
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 3%;
+    color: var(--midnight-blue);
+    text-align: right;
 }
 
 .other-pictures-container {
@@ -174,22 +193,6 @@ img {
     height: 45%;
 }
 
-h3 {
-    font-size: 1.5rem;
-}
-
-
-.text-container1 {
-    position: absolute;
-    top: 55%;
-    left: 1%;
-    background: var(--teal);
-    padding: 1%;
-    padding-left: 10%;
-    color: var(--midnight-blue);
-    text-align: right;
-}
-
 .text-container2 {
     position: absolute;
     top: 15%;
@@ -197,6 +200,7 @@ h3 {
     background: var(--teal);
     padding: 1%;
     padding-left: 8%;
+    padding-right: 2%;
     color: var(--midnight-blue);
     text-align: right;
 }
@@ -208,6 +212,7 @@ h3 {
     background: var(--teal);
     padding: 1%;
     padding-right: 8%;
+    padding-left: 2%;
     color: var(--midnight-blue);
     text-align: left;
 }
