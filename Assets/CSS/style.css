@@ -36,7 +36,8 @@ li {
     margin-right: 10px;
 }
 
-a {
+/* Applies to the anchor elements within the header and contact me*/
+nav ul li a, .contact-info a {
     text-decoration: none; /*remvoes bullets*/
     font-size: 1.25rem;
     padding: 20px;
@@ -120,11 +121,14 @@ h2{
     color: var(--off-white);
     font-size: 1.25rem;
     font-weight: 200;
+    text-align: justify;
+    line-height: 1.25;
 }
 
 #about-me img {
    width: 30%;
    border: none;
+   border-radius: 50%;
 }
 
 #work {
@@ -145,11 +149,6 @@ img {
     opacity: 3;
 }
 
-/* .project-pictures img:hover .text-container1{
-    padding-left: 15%;
-    background: var(--midnight-blue);
-} */
-
 #big-picture-container {
     position: relative;
 }
@@ -167,11 +166,11 @@ h3 {
 .text-container1 {
     position: absolute;
     top: 55%;
-    left: 1%;
+    left: 1%; 
     background: var(--teal);
     padding: 1%;
-    padding-left: 10%;
-    padding-right: 3%;
+    padding-left: 5%;
+    padding-right: 2%;
     color: var(--midnight-blue);
     text-align: right;
 }
