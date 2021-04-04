@@ -355,7 +355,7 @@ h3 {
         
     }
 
-    a {
+    nav ul li a {
         font-size: 0.55rem;
     }
 
@@ -364,7 +364,7 @@ h3 {
         /* display: block; */
     }
 
-    nav ul li a:hover {
+    nav ul li a:hover, a {
         font-size: 0.85rem;
 
     }
@@ -401,4 +401,5 @@ h3 {
     .contact {
         border-bottom: none;
     }
+
 }
