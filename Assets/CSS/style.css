@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* sets the fonts for the page, with defaults as back-up */
     background: var(--dark-blue);
 }
 
@@ -19,14 +19,14 @@ header {
     height: 5.5rem;
     background: var(--teal);
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end; /* puts the nav elements on the right side of the space */
+    align-items: center; /* centers the nav element on the cross axis */
 }
     
 nav{
     padding: 1.5%;
     display: inline-block;
-    white-space: nowrap;
+    white-space: nowrap; /* the nav elements won't wrap when the space gets smaller */
     background: var(--teal);
 }
 
@@ -45,6 +45,7 @@ nav ul li a, .contact-info a {
     font-weight: 750; /*boldens the text*/
 }
 
+/* applies only to the anchor elements within the nav parent */
 nav ul li a {
     transition-property: font-size, font-weight; /*sets transition effect for font-size and font-weight*/
     transition-duration: 1s; /*sets the length of the transition effect*/
@@ -54,19 +55,15 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 1.5rem; /*the font size will increase to 2rem when hovered over*/
     font-weight: 10000; /*the font will bolden more when hovered over*/
-    
 }
 
+/* applies to the div around the h1 element */
 .background-photo {
-    clear:both;
     display: flex;
-    justify-content: space-between;  /*Pushes space between the h1 header and nav links so they're on opposite sides */
-    align-items: flex-start; /*centers the content along the cross axis */
     background-image: url(../Images/bnw-mountain\ \(2\).jpg);
-    background-size: cover;
+    background-size: cover; /* this makes the background image stretch to fit the entire space, or else it would repeat itself */
     height: 40rem;
     background-position-x: 25%; /*sets initial horizontal position*/
-      
 }
 
 h1 {
@@ -111,7 +108,6 @@ h2{
     justify-content: center;
     align-items: center;
     padding: 3%;
-    
 }
 
 
@@ -125,34 +121,40 @@ h2{
     line-height: 1.25;
 }
 
-#about-me img {
-   width: 30%;
-   border: none;
-   border-radius: 50%;
-}
-
-#work {
-    display: inline-flex;
-    justify-content: space-between;
-    
-}
-
+/* these are the defualt properties for all the images */
 img {
     border: solid 10px var(--teal);
     margin: 1%;
     opacity: 0.85;
 }
 
+/* this sets the properties for the picture in the about me section */
+#about-me img {
+   width: 30%;
+   border: none;
+   border-radius: 50%;
+}
+
+/* this makes the work section a flex box */
+#work {
+    display: inline-flex;
+    justify-content: space-between;
+    
+}
+
+/* this sets the properties for the pictures in the work section when hovered over */
 .project-pictures img:hover {
     box-shadow: 0px 0px 50px 0px var(--midnight-blue);
     transform: scale(1.01);
     opacity: 3;
 }
 
+/* set to relative so that the text containers can be moved around on the pictures */
 #big-picture-container {
     position: relative;
 }
 
+/* sets the properties for the big picture */
 #big-picture {
     margin: 1%;
     height: 85%;
@@ -163,6 +165,14 @@ h3 {
     font-size: 1.5rem;
 }
 
+/*properties for the project details text*/
+.text-container1 p, .text-container2 p, .text-container3 p {
+    color: var(--off-white);
+    font-size: 1.1rem;
+    padding-top: 3%;
+}
+
+/* sets the properties for the big picture's text box */
 .text-container1 {
     position: absolute;
     top: 55%;
@@ -175,16 +185,19 @@ h3 {
     text-align: right;
 }
 
+/* the four pictures below the big picture are in a flex box */
 .other-pictures-container {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* this sets the properties for the pictures below the big picture */
 .other-pictures {
     height: 100%;
     width: 47%;
 }
 
+/*by making the position of the pictures relative and the text box absolute, I can put the text where I want it on the picture*/
 .other-pictures-text-container{
     position: relative;
     display: flex;
@@ -192,8 +205,9 @@ h3 {
     height: 45%;
 }
 
+/*text box for project pictures on the right*/
 .text-container2 {
-    position: absolute;
+    position: absolute; 
     top: 15%;
     left: 1%;
     background: var(--teal);
@@ -204,6 +218,7 @@ h3 {
     text-align: right;
 }
 
+/*text box for project pictures on the left*/
 .text-container3 {
     position: absolute;
     top: 15%;
@@ -216,32 +231,28 @@ h3 {
     text-align: left;
 }
 
-.text-container1 p, .text-container2 p, .text-container3 p {
-    color: var(--off-white);
-    font-size: 1.1rem;
-    padding-top: 3%;
-}
-
+/* this makes about me section a flex box */
 #contact-me {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; /*pushes the header and .contact-info div to either side of the flex box*/
 }
 
+/* the contact info next to the header is also in a flex box */
 .contact-info {
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /*evenly spaces out the phone number and links to Github and LinkedIn*/
     align-items: center;
     width: 100%;
 }
 
+/* this sets the properties for the anchor elements in the contact section */
 .contact {
     border-bottom: 4px solid var(--teal);
     padding: 10px;
 }
 
 
-/* Media queries */
+/* Media queries for max-wdith of 992px, 768px and 576px */
 
 @media screen and (max-width: 992px) {
     header{
