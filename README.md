@@ -3,7 +3,7 @@
 ## Summary
 
 Welcome to my portfolio! This page features my projects, contact information and some information about me and my
-journy to becoming a web developer. The key features of my page include:
+journey to becoming a web developer. The key features of my page include:
 
  * Links at the top of the page that transport you to the different sections of my page
  * One of the links, Resume, will open a copy of my resume pdf in a new window
@@ -20,7 +20,7 @@ I added the following elements to my page to make it more dynamic:
 * I added a striking picture of a mountain behind my header
 * My picture in the about me section is rounded through CSS
 * The first project's stock image in my Work section is larger than the rest below it
-* In my work section, when you hover over the stock images for each project, they grow larger, lose their opacity and have a box shadow
+* In my work section, when you hover over the stock image for each project, they grow larger, lose their opacity and have a box shadow
 * Media queries allow my page to be responsive on smaller screens
 
 ## Link to Deploy
