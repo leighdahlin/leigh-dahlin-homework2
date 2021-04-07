@@ -25,7 +25,7 @@ I added the following elements to my page to make it more dynamic:
 
 ## Link to Deploy
 
-![Portfolio: Leigh Dahlin](https://leighdahlin.github.io/leigh-dahlin-homework2/)
+[Portfolio: Leigh Dahlin](https://leighdahlin.github.io/leigh-dahlin-homework2/)
 
 ## Screenshot
 
